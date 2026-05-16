@@ -55,20 +55,22 @@
   <header class="site-header" id="header">
     <div class="nav-shell">
       <nav class="nav-left" aria-label="Hauptnavigation links">
-        <a class="nav-link active" href="#willkommen">Willkommen</a>
-        <a class="nav-link" href="#haus">Der Urchenhof</a>
-        <a class="nav-link" href="#zimmer">Zimmer</a>
-        <a class="nav-link" href="#apartments">Apartments</a>
+        <a class="nav-link active" href="./">Willkommen</a>
+        <a class="nav-link" href="der-urchenhof.html">Der Urchenhof</a>
+        <a class="nav-link" href="zimmer.html">Zimmer</a>
+        <a class="nav-link" href="apartments.html">Apartments</a>
+        <a class="nav-link" href="pauschalen.html">Pauschalen</a>
       </nav>
-      <a class="brand" href="#main-content" aria-label="Urchenhof Startseite">
+      <a class="brand" href="./" aria-label="Urchenhof Startseite">
         <div class="brand-logo" aria-hidden="true">UH</div>
         <div class="brand-copy"><div class="brand-name">Urchenhof</div><div class="brand-sub">Familie Herzog</div></div>
       </a>
       <nav class="nav-right" aria-label="Hauptnavigation rechts">
-        <a class="nav-link" href="#pauschalen">Pauschalen</a>
-        <a class="nav-link" href="#anreise">Anreise</a>
-        <a class="nav-link" href="#winter">Winter</a>
-        <a class="nav-link" href="#sommer">Sommer</a>
+        <a class="nav-link" href="anreise.html">Anreise</a>
+        <a class="nav-link" href="winter.html">Winter</a>
+        <a class="nav-link" href="sommer.html">Sommer</a>
+        <a class="nav-link" href="bildergalerien.html">Bildergalerien</a>
+        <a class="nav-link" href="ferienhaus-hintermoos.html">Das Ferienhaus</a>
         <a class="nav-link" href="#kontakt">Anfrage</a>
       </nav>
     </div>
@@ -92,6 +94,39 @@
         <div class="ornament"><span>•</span></div>
       </div>
       <div class="corner-icon left">⌂</div><div class="corner-icon right">✧</div>
+    </section>
+
+    <section id="preisrechner" class="price-calculator-section reveal">
+      <div class="wrap calculator-card">
+        <div>
+          <div class="eyebrow">★ Preisrechner ★</div>
+          <h2 class="display-title">Urlaub berechnen</h2>
+          <p>Berechnen Sie eine unverbindliche Orientierung mit den aktuell genannten Ab-Preisen: Zimmer ab EUR 42,00 pro Person und Tag, Apartment 2-4 ab EUR 69,00 pro Ferienwohnung und Tag, Apartment 4-6 ab EUR 98,00 pro Ferienwohnung und Tag.</p>
+          <p class="small-note">Ferienhaus Hintermoos und Oster-Familienaktion sind auf Anfrage. Endpreise können je nach Saison, Verfügbarkeit und Angebot abweichen.</p>
+        </div>
+        <form class="price-calculator" data-price-calculator aria-label="Preisrechner für Zimmer und Apartments">
+          <label>Unterkunft
+            <select name="unit" data-price-unit>
+              <option value="double" data-price="42" data-mode="person" data-min="1" data-max="2">Doppelzimmer mit Balkon · ab EUR 42,00 p.P./Tag</option>
+              <option value="triple" data-price="42" data-mode="person" data-min="2" data-max="3">Dreibettzimmer mit Balkon · ab EUR 42,00 p.P./Tag</option>
+              <option value="quad" data-price="42" data-mode="person" data-min="2" data-max="4">Vierbettzimmer mit Balkon · ab EUR 42,00 p.P./Tag</option>
+              <option value="apt24" data-price="69" data-mode="unit" data-min="2" data-max="4">Apartment für 2 - 4 Personen · ab EUR 69,00/FEWO/Tag</option>
+              <option value="apt46" data-price="98" data-mode="unit" data-min="4" data-max="6">Apartment für 4 - 6 Personen · ab EUR 98,00/FEWO/Tag</option>
+            </select>
+          </label>
+          <div class="calculator-fields">
+            <label>Personen
+              <input name="guests" data-price-guests type="number" min="1" max="6" value="2" inputmode="numeric">
+            </label>
+            <label>Nächte
+              <input name="nights" data-price-nights type="number" min="1" max="30" value="7" inputmode="numeric">
+            </label>
+          </div>
+          <output class="calculator-result" data-price-result>€ 588,00</output>
+          <p class="small-note" data-price-note>Berechnung: 2 Personen × 7 Nächte × EUR 42,00.</p>
+          <a class="cta" data-price-mail href="mailto:info@pension-urchenhof.at?subject=Anfrage%20Urchenhof">Mit diesen Daten anfragen</a>
+        </form>
+      </div>
     </section>
 
     <section id="haus" class="reveal">
@@ -120,11 +155,11 @@
       <div class="wrap">
         <div class="chapter"><div class="eyebrow">★ Zimmer & Ferienwohnungen ★</div><span class="script">Wohnen im Urchenhof</span><p>Wir möchten unseren Gästen einen selbstbestimmten und maßgeschneiderten Aufenthalt ermöglichen. Wählen Sie aus 1 Doppelzimmer, 2 Mehrbettzimmern und 3 Ferienwohnungen.</p></div>
         <div class="room-album">
-          <article class="room-card"><span class="room-icon">☕</span><img src="fotos/doppelbett mit balkon.png" alt="Doppelzimmer mit Balkon in der Frühstückspension Urchenhof" decoding="async" loading="lazy"><h3 class="room-name">Doppelzimmer</h3><div class="eyebrow room-type">1 Doppelbett · Balkon</div><p>Belegung: 1 - 2 Personen. Verpflegung: Frühstück. Pro Person und Tag ab EUR 42,00.</p></article>
-          <article class="room-card"><span class="room-icon">▣</span><img src="fotos/urchenhof_dreibettzimmerr.png" alt="Dreibettzimmer mit Balkon in Maria Alm" decoding="async" loading="lazy"><h3 class="room-name">Dreibettzimmer</h3><div class="eyebrow room-type">Doppelbett + Couchliege</div><p>Belegung: 2 - 3 Personen. Verpflegung: Frühstück. Pro Person und Tag ab EUR 42,00.</p></article>
-          <article class="room-card"><span class="room-icon">✦</span><img src="fotos/doppelbett mit balkon.png" alt="Vierbettzimmer mit Balkon in Pension Urchenhof" decoding="async" loading="lazy"><h3 class="room-name">Vierbettzimmer</h3><div class="eyebrow room-type">Doppelbett + Doppelcouch</div><p>Belegung: 2 - 4 Personen. Verpflegung: Frühstück. Pro Person und Tag ab EUR 42,00.</p></article>
-          <article class="room-card" id="apartments"><span class="room-icon">⌂</span><img src="fotos/urchenhof_apartment.png" alt="Apartment für 2 bis 4 Personen im Urchenhof" decoding="async" loading="lazy"><h3 class="room-name">Apartment 2-4</h3><div class="eyebrow room-type">1 Schlafzimmer · Küche</div><p>Diele, Küche, Wohnzimmer mit Doppelcouch, Bad oder Dusche, 2 WC und Balkon. Pro FEWO und Tag ab € 69,00.</p></article>
-          <article class="room-card"><span class="room-icon">♕</span><img src="fotos/urchenhof_apartment2_4..png" alt="Apartment für 4 bis 6 Personen mit Balkon" decoding="async" loading="lazy"><h3 class="room-name">Apartment 4-6</h3><div class="eyebrow room-type">2 Schlafzimmer · Mansarde</div><p>Diele, Wohnküche, Dusche/WC, Bad/WC, Balkon mit Mansarde. Pro FEWO und Tag ab € 98,00.</p></article>
+          <article class="room-card"><span class="room-icon">☕</span><img src="fotos/doppelbett mit balkon.png" alt="Doppelzimmer mit Balkon in der Frühstückspension Urchenhof" decoding="async" loading="lazy"><h3 class="room-name">Doppelzimmer</h3><div class="eyebrow room-type">1 Doppelbett · Balkon</div><p>Belegung: 1 - 2 Personen. Verpflegung: Frühstück. Pro Person und Tag ab EUR 42,00.</p><a class="cta" href="zimmer.html#doppelzimmer">Details, Grundriss und Preise</a></article>
+          <article class="room-card"><span class="room-icon">▣</span><img src="fotos/urchenhof_dreibettzimmerr.png" alt="Dreibettzimmer mit Balkon in Maria Alm" decoding="async" loading="lazy"><h3 class="room-name">Dreibettzimmer</h3><div class="eyebrow room-type">Doppelbett + Couchliege</div><p>Belegung: 2 - 3 Personen. Verpflegung: Frühstück. Pro Person und Tag ab EUR 42,00.</p><a class="cta" href="zimmer.html#dreibettzimmer">Details und Preise</a></article>
+          <article class="room-card"><span class="room-icon">✦</span><img src="fotos/doppelbett mit balkon.png" alt="Vierbettzimmer mit Balkon in Pension Urchenhof" decoding="async" loading="lazy"><h3 class="room-name">Vierbettzimmer</h3><div class="eyebrow room-type">Doppelbett + Doppelcouch</div><p>Belegung: 2 - 4 Personen. Verpflegung: Frühstück. Pro Person und Tag ab EUR 42,00.</p><a class="cta" href="zimmer.html#vierbettzimmer">Details und Preise</a></article>
+          <article class="room-card" id="apartments"><span class="room-icon">⌂</span><img src="fotos/urchenhof_apartment.png" alt="Apartment für 2 bis 4 Personen im Urchenhof" decoding="async" loading="lazy"><h3 class="room-name">Apartment 2-4</h3><div class="eyebrow room-type">1 Schlafzimmer · Küche</div><p>Diele, Küche, Wohnzimmer mit Doppelcouch, Bad oder Dusche, 2 WC und Balkon. Pro FEWO und Tag ab € 69,00.</p><a class="cta" href="apartments.html#apartment-2-4">Details, Grundriss und Preise</a></article>
+          <article class="room-card"><span class="room-icon">♕</span><img src="fotos/urchenhof_apartment2_4..png" alt="Apartment für 4 bis 6 Personen mit Balkon" decoding="async" loading="lazy"><h3 class="room-name">Apartment 4-6</h3><div class="eyebrow room-type">2 Schlafzimmer · Mansarde</div><p>Diele, Wohnküche, Dusche/WC, Bad/WC, Balkon mit Mansarde. Pro FEWO und Tag ab € 98,00.</p><a class="cta" href="apartments.html#apartment-4-6">Details, Grundriss und Preise</a></article>
         </div>
       </div>
     </section>
@@ -225,7 +260,7 @@
       <div class="footer-band">▲ ✦ ✿ ▲ ✦ ✿ ▲ ✦ ✿ ▲</div>
       <div class="footer-grid">
         <div><div class="footer-logo">Urchenhof</div><div class="footer-address">Frühstückspension Urchenhof<br>Familie Herzog<br>Urchen 11<br>5761 Maria Alm<br>Österreich</div></div>
-        <nav class="footer-menu" aria-label="Footer Navigation"><a href="#willkommen">Willkommen</a><a href="#haus">Der Urchenhof</a><a href="#zimmer">Zimmer</a><a href="#apartments">Apartments</a><a href="#pauschalen">Pauschalen</a><a href="#anreise">Anreise</a><a href="#winter">Winter</a><a href="#sommer">Sommer</a><a href="#bilder">Bildergalerien</a><a href="#ferienhaus">Das Ferienhaus</a></nav>
+        <nav class="footer-menu" aria-label="Footer Navigation"><a href="./">Willkommen</a><a href="der-urchenhof.html">Der Urchenhof</a><a href="zimmer.html">Zimmer</a><a href="apartments.html">Apartments</a><a href="pauschalen.html">Pauschalen</a><a href="anreise.html">Anreise</a><a href="winter.html">Winter</a><a href="sommer.html">Sommer</a><a href="bildergalerien.html">Bildergalerien</a><a href="ferienhaus-hintermoos.html">Das Ferienhaus</a></nav>
         <div class="newsletter" id="anfrage"><h3>Anfrage</h3><p>Wir freuen uns auf Ihre Anfrage für Zimmer, Ferienwohnungen, Pauschalen oder das Ferienhaus Hintermoos.</p><div class="contact-box"><a class="contact-link" href="tel:+4365847893">Tel. +43 6584 7893</a><span>Fax +43 6584 7295 15</span><a class="contact-link" href="mailto:info@pension-urchenhof.at">info@pension-urchenhof.at</a><a class="contact-link" href="https://www.pension-urchenhof.at/">www.pension-urchenhof.at</a><a class="contact-link" href="https://www.apartments-laerchenhof.at/">Apartmenthaus Lärchenhof ansehen</a></div><a class="cta" href="mailto:info@pension-urchenhof.at?subject=Anfrage%20Urchenhof">Jetzt anfragen</a></div>
       </div>
       <div class="footer-bottom">Familie Herzog, Urchen 11, 5761 Maria Alm, Österreich - Tel. +43 6584 7893 - info@pension-urchenhof.at</div>
